@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+    <style>
+        .banner {
+            background-image: url('img/main-bg.jpg');
+            width: 1340px;
+            height: 940px;
+        }
+        
+        .banner h1 {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 50px;
+        }
+        
+        .banner p {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        
+        .banner form {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        
+        .button {
+            position: relative;
+            color: white;
+            border: none;
+            background-color: rgb(189, 134, 32);
+        }
+        
+        .banner2 {
+            background-image: url('img/the-games-bg.jpg');
+            width: 1340px;
+            height: 940px;
+        }
+        
+        .banner2 h1 {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 20px;
+        }
+        
+        .banner2 p {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 50px;
+        }
+        
+        .banner2 img {
+            position: relative;
+            width: 700px;
+            height: 400px;
+            margin: 10px, 10px, 10px, 10px;
+        }
+        
+        .banner3 {
+            background-image: url('img/features.jpg');
+            width: 1340px;
+            height: 940px;
+        }
+        
+        .banner3 h1 {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 20px;
+        }
+        
+        .banner3 p1 {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 50px;
+        }
+        
+        .banner3 h2 {
+            position: relative;
+            text-align: left;
+            color: orange;
+            font-family: Arial, Verdana;
+            font-size: 30px;
+        }
+        
+        .banner3 p2 {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 15px;
+        }
+        
+        .banner3 h3 {
+            position: relative;
+            text-align: left;
+            color: orange;
+            font-family: Arial, Verdana;
+            font-size: 30px;
+        }
+        
+        .banner3 h4 {
+            position: relative;
+            text-align: left;
+            color: orange;
+            font-family: Arial, Verdana;
+            font-size: 30px;
+        }
+        
+        .banner4 {
+            background-image: url('img/requirements.png');
+            width: 1340px;
+            height: 940px;
+        }
+        
+        .banner4 h1 {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 20px;
+        }
+        
+        .banner4 p {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 50px;
+        }
+        
+        .table-one,
+        th,
+        td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            padding: 1.5em;
+            color: white
+        }
+        
+        .banner5 {
+            background-image: url('img/top-score-bg.png');
+            width: 1340px;
+            height: 940px;
+        }
+        
+        .banner5 h1 {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 50px;
+        }
+        
+        .banner5 p {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        
+        .banner6 {
+            background-image: url('img/top-score-bg.png');
+            width: 1340px;
+            height: 940px;
+        }
+        
+        .banner6 form {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        
+        .banner6 h1 {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 20px;
+        }
+        
+        .banner6 h2 {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Verdana;
+            font-size: 50px;
+        }
+        
+        .banner6 p {
+            position: relative;
+            text-align: left;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <h1>PLAY TRADITIONAL GAME</h1><br><br>
+        <p>Experience new traditional game play</p>
+        <form>
+            <button class="button" type="submit">PLAY NOW</button>
+        </form>
+    </div>
+
+    <div class="banner2">
+        <h1>What's so Special?</h1><br>
+        <p>THE GAMES</p>
+        <img src="img/rockpaperstrategy-1600.jpg" alt="rockpaper">
+    </div>
+
+    <div class="banner3">
+        <h1>What's so Special?</h1><br>
+        <p1>THE FEATURES</p1>
+        <h2>TRADITIONAL GAME</h2>
+        <p2>If you miss your childhood, we provide many tradiional games here</p2>
+        <h3>GAME SUIT</h3>
+        <h4>TBD</h4>
+    </div>
+
+    <div class="banner4">
+        <h1>Can my computer run this game?</h1><br>
+        <p>SYSTEM REQUIREMENTS</p>
+        <table border="1" cellpadding="5" cellspaching="5">
+            <thead>
+                <tr>
+                    <th>OS: Windows 7 64-bit only (No OSX support at this time</th>
+                    <th>PROCESSOR: Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MEMOR: 4GB RAM</td>
+                    <td>STORAGE: 8 GB available space</td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1" cellpadding="5" cellspaching="5">
+            <thead>
+                <tr>
+                    <th>GRAPHICS: NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div class="banner5">
+        <h1>TOP SCORES</h1><br>
+        <p>This top score from various games provided on this platform</p>
+        <form>
+            <button class="button" type="submit">see more</button>
+        </form>
+    </div>
+
+    <div class="banner6">
+        <h1>Want to stay in touch?</h1><br>
+        <h2>NEWSLETTER SUBSCRIBE</h2><br>
+        <p>In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don't spam.</p>
+        <img src="img/skull.png" alt="skull">
+        <form>
+            <button class="button" type="submit">Subscribe Now</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+</html>
